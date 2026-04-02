@@ -1,8 +1,46 @@
-In this Clone the repository come to docker folder and build the image and run it/n
-**APPROCH 1**/n
-  make sure your llm is running on host and use the command/n
-  docker run -d -e BOT_TOKEN=<Replace-Your-Token>/n
-**APPROCH 2**/n
-  Run the docker image for ollama and exec the containe and say ollama pull llama2/n
-**Approch 3**/n
-  Simply say docker-compose-up/n
+## Setup Instructions
+
+Clone the repository, navigate to the `docker` folder, build the image, and run it.
+
+---
+
+### **Approach 1**
+
+* Make sure your LLM is running on the host machine
+* Run the container using:
+
+```bash
+docker run -d -e BOT_TOKEN=<Replace-Your-Token> <your-image-name>
+```
+
+---
+
+### **Approach 2**
+
+* Run the Docker container for Ollama:
+
+```bash
+docker run -d --name ollama ollama/ollama
+```
+
+* Exec into the container:
+
+```bash
+docker exec -it ollama bash
+```
+
+* Pull the model:
+
+```bash
+ollama pull llama2
+```
+
+---
+
+### **Approach 3**
+
+* Simply run:
+
+```bash
+docker-compose up
+```
