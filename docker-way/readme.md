@@ -1,3 +1,15 @@
+## System Monitoring Bot
+
+This project allows you to check basic system properties such as:
+
+1. Free Memory
+2. Disk Space
+3. Uptime
+4. List files in a directory
+5. CPU Usage
+
+---
+
 ## Setup Instructions
 
 Clone the repository, navigate to the `docker` folder, build the image, and run it.
